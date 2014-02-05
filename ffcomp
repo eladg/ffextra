@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/local/bin/ffplay $1 -vf "movie=$2[f2];[in]pad=iw:ih*2[f1];[f1][f2]overlay=0:h[out]"

@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/local/bin/ffprobe -show_streams -select_streams a -print_format json -v quiet "$@"

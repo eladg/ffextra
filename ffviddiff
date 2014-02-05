@@ -1,0 +1,5 @@
+#!/bin/bash
+ffvidinfo $1 > /tmp/$1.json
+ffvidinfo $2 > /tmp/$2.json
+
+opendiff /tmp/$1.json /tmp/$2.json
