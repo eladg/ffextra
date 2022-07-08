@@ -2,6 +2,4 @@
 ffvidinfo $1 > /tmp/$(basename $1).json
 ffvidinfo $2 > /tmp/$(basename $2).json
 
-$(basename $a)
-
 opendiff /tmp/$(basename $1).json /tmp/$(basename $2).json
